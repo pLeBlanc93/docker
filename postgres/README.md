@@ -22,4 +22,4 @@ In order to user PostgreSQL with ArcGIS clients, you'll need the correct `st_geo
 
 ## Resources
 
-- https://hub.docker.com/_/postgres/
+- [Docker Hub](https://hub.docker.com/_/postgres/)
