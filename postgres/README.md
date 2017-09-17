@@ -18,3 +18,8 @@ In order to user PostgreSQL with ArcGIS clients, you'll need the correct `st_geo
 3. Enter the detached container if needed
    - `docker exec -it pg bash`
    - `docker exec -it pg psql -U postgres`
+
+
+## Resources
+
+- https://hub.docker.com/_/postgres/
