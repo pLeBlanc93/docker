@@ -14,7 +14,14 @@ Oracle is a bit more complicated to create than the others because it requires y
 1. Build the image and tag it however you'd like
    - `docker build 12.2.0.1 -t oracle:12cR2`
 2. Create the container, naming it how you'd like (randomly names if not specified)
-   - `docker run -d -p 1521:1521 --name oracle oracle:12cR2`
+  
+   ```
+   docker run -d -p 1521:1521 --name oracle \
+   -e ORACLE_SID=CDB \
+   -e ORACLE_PDB=PDB \
+   -e ORACLE_PWD=StrongPass! \
+   oracle:12cR2`
+   ```
 3. Enter the detached container if needed
    - `docker exec -it oracle bash`
    - `docker exec -it oracle sqlplus pdbadmin@ORCLPDB1`
